@@ -1,0 +1,8 @@
+.page-footer{
+	bottom: 0;
+	height: auto;
+	padding: $base-padding;
+	color: $base-white;
+	text-align: center;
+	@include fixed-elements();
+}

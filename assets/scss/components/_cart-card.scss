@@ -1,0 +1,105 @@
+.item{
+	display: flex;
+	padding: 15px;
+	border: 1px solid #999;
+	background-color: #fff;
+	margin-bottom: 15px;
+
+	img{
+		width: 35%;
+	}
+
+	.item-data{
+		width: 65%;
+		padding-left: 15px;
+
+		.item-label{
+			font-size: 125%;
+		    margin-bottom: 15px;
+			display: block;
+		}
+
+		.selling-price{
+			font-weight: bold;
+			color: #333;
+			margin-right: 5px;
+		}
+
+		.original-price{
+			color: #919191;
+			text-decoration: line-through;
+		}
+		
+		.offer-price{
+			color: #14a115;
+			font-weight: bold;
+			float: right;
+		}
+
+		.counter{
+			display: flex;
+			margin-top: 15px;
+
+			input{
+				border: 1px solid #ccc;
+			    width: 30px;
+			    padding: 5px 10px;
+			    height: 30px;
+			    box-sizing: border-box;
+			}
+
+			a {
+			    border-radius: 15px;
+			    height: 30px;
+			    width: 30px;
+			    background-color: #fff;
+			    border: 1px solid #ccc;
+			    text-decoration: none;
+			    display: block;
+			    margin: 0 5px;
+			    display: flex;
+			    font-size: 150%;
+			    align-items: center;
+			    justify-content: center;
+			}
+		}
+
+		.btn-remove{
+			font-weight: bold;
+		    text-transform: uppercase;
+		    margin-top: 15px;
+		    display: block;
+		    color: inherit;
+		    text-decoration: none;
+		}
+
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	
+	.item{
+		align-items: center;
+	
+		.item-data{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+
+			div{
+				width: 40%;
+				padding-right: 30px;
+			}
+			.counter,
+			.btn-remove{
+				margin-top: 0;
+			}
+			.item-label{
+				width: 100%;
+			}
+			.offer-price{
+				float: none;
+				margin-left: 10px;
+			}
+		}
+	}
+}

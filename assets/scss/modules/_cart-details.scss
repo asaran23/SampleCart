@@ -1,0 +1,42 @@
+ .cart-brief{
+	border: 1px solid #999;
+	background-color: #fff;
+	margin-bottom: 15px;
+
+	h2 {
+	    font-size: 125%;
+	    margin: 0;
+	    color: #999;
+	    border-bottom: 1px solid #ccc;
+	    text-transform: uppercase;
+	    padding: 15px;
+		display: flex;
+	}
+
+	.rates{
+		padding: 15px;
+		display: flex;
+	}
+
+	.footer {
+	    font-weight: bold;
+	    border-top: 1px solid #999;
+		padding: 15px;
+		display: flex;
+	}
+
+	span{
+		width: 100%;
+		text-align: right;
+
+		&:first-child{
+			text-align: left;
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.cart-brief{
+		width: 25%;
+		float: right;
+	}
+}

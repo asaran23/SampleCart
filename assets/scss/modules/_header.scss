@@ -1,0 +1,53 @@
+.page-header{
+	height: 50px;
+	top: 0;
+	@include fixed-elements();
+
+	.logo{
+		color: $secondary-color;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 24px;
+	    text-decoration: none;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    padding: 13px;
+	    display: block;
+	    overflow: hidden;
+	    float: left;
+
+	    &:before{
+			content: "\f005";
+		}
+	}
+
+	.btn-search{
+		@include head-icons();
+
+		&:before{
+			content: "\f002";
+			margin: 0 80px 0 12px;
+		}
+	}
+
+	.btn-cart{
+		@include head-icons();
+
+		&:before{
+			content: "\f07a";
+			margin: 0 80px 0 12px;
+		}
+
+		span{
+			background-color: $danger;
+			position: absolute;
+		    font-family: verdana;
+		    padding: 3px 5px;
+		    font-size: 10px;
+		    line-height: 1;
+		    border-radius: 10px;
+		    top: 7px;
+		    right: 6px;
+		}
+	}	
+
+}

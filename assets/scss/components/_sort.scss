@@ -1,0 +1,76 @@
+.sort{
+	width: 50%;
+	height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.btn-sort{
+	display: block;
+	padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+}
+.page-content .sort i{
+	margin-right: 3px;
+}
+.sort-block{
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 30px;
+	right: 30px;
+	background-color: #fff;
+	z-index: 9;
+
+	h2{
+		font-size: 120%;
+		padding: 0;
+		margin: 15px 10px;
+	}
+	.options{	
+		padding: 15px;
+
+		label{
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+	.button-bar{
+		display: flex;
+		height: 40px;
+		font-weight: bold;
+		color: #4268ea;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.sort{
+		width: 80%;
+	
+		.btn-sort,
+		.sort-block .button-bar{
+			display: none;
+		}
+		
+		.sort-block{
+			display: flex;
+			position: static;
+			background-color: transparent;
+
+			.options{
+				display: flex;
+
+				label{
+					margin-right: 20px;
+				    margin-top: 2px;
+				    font-weight: bold;
+				    color: #666;
+				}
+				input{
+					display: none;
+				}
+			}
+		}
+	}
+}

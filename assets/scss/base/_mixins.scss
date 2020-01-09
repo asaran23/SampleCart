@@ -1,0 +1,26 @@
+@mixin fixed-elements(){
+	background-color: $primary-color;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+@mixin font-awesome-icon(){
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 24px;
+}
+
+@mixin head-icons(){
+	float: right;
+	height: 50px;
+	width: 50px;
+	color: #fff;
+	@include font-awesome-icon();
+    padding: 12px 2px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}

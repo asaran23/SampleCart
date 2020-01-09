@@ -1,0 +1,56 @@
+
+.item{
+	width: 50%;
+	border-right: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	padding: 15px;
+
+	&:nth-child(2n){
+		border-right: 0;
+	}
+
+	.item-label{
+		margin: 15px 0;
+		display: block;
+	}
+
+	.selling-price{
+		font-weight: bold;
+		color: #333;
+		margin-right: 5px;
+	}
+
+	.original-price{
+		color: #919191;
+		text-decoration: line-through;
+	}
+
+	.offer-price{
+		color: #14a115;
+		font-weight: bold;
+		float: right;
+	}
+	
+	.button-wrapper{
+		text-align: center;
+		margin-top: 15px;
+
+		.btn-add-cart{
+			background-color: $secondary-color;
+			color: #443e31;
+			font-weight: bold;
+			padding: 5px 10px;
+			border-radius: 20px;
+			height: 30px;
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.item{
+		width: 20%;
+		border: none;
+		padding: 15px 15px 0 0;
+	}
+}

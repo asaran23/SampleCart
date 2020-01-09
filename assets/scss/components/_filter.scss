@@ -1,0 +1,81 @@
+
+.filters{
+	width: 50%;
+	height: 50px;
+    border-bottom: 1px solid $border-color;
+}
+.btn-filter{
+	display: block;
+	padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-right: 0;
+}
+.page-content .filters i{
+	margin-right: 3px;
+}
+.filter-block{
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 30px;
+	right: 30px;
+	background-color: #fff;
+	z-index: 9;
+
+	h2{
+		font-size: 120%;
+		padding: 0;
+		margin: 15px 10px;
+	}
+
+	.options{	
+		padding: 15px;
+
+		label{
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+	.button-bar{
+		display: flex;
+		height: 40px;
+		font-weight: bold;
+		color: #4268ea;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.filters{
+		height: 100%;
+		width: 20%;
+    	border-right: 1px solid $border-color;
+	
+		.btn-filter,
+		.btn-filter-cancel{
+			display: none;
+		}
+		.filter-block{
+			display: block;
+			position: static;
+			background-color: transparent;
+		}
+		.filter-block .button-bar{
+			display: block;
+			text-align: center;
+			margin-top: 30px;
+		}
+		#myRange{
+			width: 100%;
+		}
+		.button-bar a.btn-filter-apply{
+			background-color: $secondary-color;
+		    color: #fff;
+		    padding: 10px 20px;
+		    border-radius: 20px;
+		    width: auto;
+		    font-weight: bold;
+		}
+	}
+}

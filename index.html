@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Cart - App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<a href="#" class="logo"></a>
+		<a href="cart.html" class="btn-cart">cart<span id="cartCount">1</span></a>
+		<a href="#" class="btn-search">search</a>
+	</header>
+	<div class="page-content">
+		<div class="filters">
+			<a href="#" class="btn-filter"><i class="fa fa-filter"></i>Filter</a>
+			<div class="filter-block">
+				<h2>Filter Options</h2>
+				<div class="options">
+					<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				</div>
+				<div class="button-bar">
+					<a href="#" class="btn-filter-cancel">Cancel</a>
+					<a href="#" class="btn-filter-apply">Apply</a>
+				</div>
+			</div>
+		</div>
+		<div class="sort">
+			<a href="#" class="btn-sort"><i class="fa fa-sort"></i>Sort</a>
+			<div class="sort-block">
+				<h2>Sort Options</h2>
+				<div class="options">
+					<label for="highToLow">
+						<input type="radio" name="gender" id="highToLow" value="highToLow">Price -- High to Low
+					</label>
+					<label for="lowToHigh">
+						<input type="radio" name="gender" id="lowToHigh" value="lowToHigh">Price -- Low to High
+					</label>
+					<label for="discount">
+						<input type="radio" name="gender" id="discount" value="discount">Discount
+					</label>
+				</div>
+				<div class="button-bar">
+					<a href="#" class="btn-sort-cancel">Cancel</a>
+					<a href="#" class="btn-sort-apply">Apply</a>
+				</div>
+			</div>	
+		</div>
+		<section class="items">
+		</section>
+	</div>
+	<div class="bg-block"></div>
+	<footer class="page-footer">&copy; copyright</footer>
+<script src="assets/scripts/list.js"></script>
+</body>
+</html>
